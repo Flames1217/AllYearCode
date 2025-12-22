@@ -71,7 +71,7 @@
             <!-- 主要内容区域 -->
             <div class="space-y-6">
                 <!-- 热力图卡片 -->
-                <div class="glass p-6 bg-slate-900/30">
+                <div class="glass p-6 bg-slate-900/30" v-if="false">
                     <p class="text-xs text-gray-400 font-bold mb-4 uppercase tracking-wider">{{ userData.totalContributions || 737 }} contributions in 2025</p>
                     <div class="chart-scroll relative min-h-[100px]">
                         <!-- 加载中占位 -->
@@ -268,11 +268,11 @@
                     </div>
                     <div class="glass p-4">
                         <p class="text-gray-400 text-xs uppercase mb-1">Followers</p>
-                        <p class="text-xl font-bold text-white">{{ userData.followers || 0 }}</p>
+                        <p class="text-xl font-bold text-white">{{ userData.followers_count || 0 }}</p>
                     </div>
                     <div class="glass p-4">
                         <p class="text-gray-400 text-xs uppercase mb-1">Following</p>
-                        <p class="text-xl font-bold text-white">{{ userData.following || 0 }}</p>
+                        <p class="text-xl font-bold text-white">{{ userData.following_count || 0 }}</p>
                     </div>
                 </div>
 
