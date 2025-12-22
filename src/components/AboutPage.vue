@@ -91,7 +91,7 @@ const showDonation = ref(false)
                 <!-- Request Mechanism Section (Full Width) -->
                 <div class="glass p-8 rounded-3xl border border-slate-800 bg-slate-900/50">
                     <h2 class="text-2xl font-bold mb-4 flex items-center gap-3"><span class="text-blue-400">🛡️</span> 请求与频率限制</h2>
-                    <p class="text-sm leading-relaxed text-slate-300 mb-4">为保护隐私，所有 GitHub 公开数据的抓取均在您的浏览器端直接完成。</p>
+                    <p class="text-sm leading-relaxed text-slate-300 mb-4">为保护隐私，所有 Gitee 公开数据的抓取均在您的浏览器端直接完成。</p>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-slate-950/30 p-4 rounded-xl border border-slate-800/50">
                             <h3 class="text-sm font-bold text-slate-100 mb-2 flex items-center gap-2">
@@ -99,7 +99,7 @@ const showDonation = ref(false)
                                 速率限制 (Rate Limit)
                             </h3>
                             <p class="text-xs leading-relaxed text-slate-400">
-                                由于 GitHub 对匿名 API 请求有严格的速率限制（通常为 <code class="text-amber-400/80">60次/小时/IP</code>），若短时间内查询频繁，可能会触发 403 错误。
+                                由于 Gitee 对匿名 API 请求有严格的速率限制（通常为 <code class="text-amber-400/80">60次/小时/IP</code>），若短时间内查询频繁，可能会触发 403 错误。
                             </p>
                         </div>
                         <div class="bg-slate-950/30 p-4 rounded-xl border border-slate-800/50">
@@ -136,7 +136,7 @@ const showDonation = ref(false)
                             <span class="font-bold text-slate-200">请作者喝杯咖啡</span>
                         </button>
 
-                        <!-- GitHub Follow -->
+                        <!-- Gitee Follow -->
                         <a
                             href="https://github.com/liu-ziting"
                             target="_blank"
@@ -147,7 +147,7 @@ const showDonation = ref(false)
                                     d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
                                 />
                             </svg>
-                            <span class="font-bold text-slate-200">GitHub Follow</span>
+                            <span class="font-bold text-slate-200">Gitee Follow</span>
                         </a>
                     </div>
 
@@ -200,7 +200,7 @@ const showDonation = ref(false)
             </Teleport>
 
             <footer class="text-center pt-12 border-t border-slate-800 text-slate-500 text-xs space-y-2">
-                <p>© 2025 GitHub Trace Soul. Built with ❤️ for Developers.</p>
+                <p>© 2025 Gitee Trace Soul. Built with ❤️ for Developers.</p>
                 <p class="opacity-50 font-mono tracking-wider italic">
                     Crafted with <span class="text-teal-400/80">Gemini-3-Flash</span> via <span class="text-purple-400/80">VibeCoding</span>
                 </p>
