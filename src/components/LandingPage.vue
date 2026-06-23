@@ -240,7 +240,7 @@
                 <h3 class="text-white font-black text-lg mb-3 tracking-tight">技术基因</h3>
                 <p class="text-sm text-gray-500 leading-relaxed">
                     深度解码你的技术序列，分析核心语言栈与工程能力，<br />
-                    预测 2026 年你将深耕的赛博领地。
+                    预测 {{ year }} 年你将深耕的赛博领地。
                 </p>
             </div>
 

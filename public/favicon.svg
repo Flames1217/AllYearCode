@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AllYearCode favicon">
+    <defs>
+        <linearGradient id="bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#141827" />
+            <stop offset="0.48" stop-color="#221342" />
+            <stop offset="1" stop-color="#063f45" />
+        </linearGradient>
+        <linearGradient id="mark" x1="17" y1="18" x2="48" y2="47" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f5f3ff" />
+            <stop offset="0.48" stop-color="#c084fc" />
+            <stop offset="1" stop-color="#22d3ee" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.4" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <rect width="64" height="64" rx="16" fill="#020617" />
+    <rect x="5" y="5" width="54" height="54" rx="14" fill="url(#bg)" stroke="#334155" stroke-width="1.5" />
+    <path d="M18 42 27.4 18h5.2L42 42h-5.3l-1.9-5.4H25.2L23.3 42H18Zm8.7-9.8h6.6L30 22.6l-3.3 9.6Z" fill="url(#mark)" filter="url(#glow)" />
+    <path d="M43.5 19.5 51 32l-7.5 12.5" fill="none" stroke="#22d3ee" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M20.5 19.5 13 32l7.5 12.5" fill="none" stroke="#a855f7" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="32" cy="48" r="2.5" fill="#e879f9" opacity="0.9" />
+</svg>
