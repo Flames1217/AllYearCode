@@ -67,6 +67,26 @@ body {
   border-color: var(--accent); 
 }
 
+.no-number-spin::-webkit-outer-spin-button,
+.no-number-spin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-number-spin {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.year-select {
+  color-scheme: dark;
+}
+
+.year-select option {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
 /* 热力图容器适配手机滚动 */
 .chart-scroll { 
   overflow-x: auto; 

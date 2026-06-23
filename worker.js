@@ -212,7 +212,7 @@ export default {
 
                 <div class="pt-6 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div class="flex items-center gap-4">
-                        <a href="https://github.com/liu-ziting" class="text-sm text-slate-400 hover:text-white transition-colors">作者: liu-ziting</a>
+                        <a href="https://github.com/Flames1217" class="text-sm text-slate-400 hover:text-white transition-colors">作者: Flames1217</a>
                         <span class="text-slate-700">|</span>
                         <span class="text-xs px-2 py-1 rounded bg-teal-500/10 text-teal-500 border border-teal-500/20">Status: Running</span>
                     </div>

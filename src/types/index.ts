@@ -1,4 +1,12 @@
-export interface GiteeUser {
+export type Platform = 'gitee' | 'github'
+
+export interface AnalysisRequest {
+    username: string
+    platform: Platform
+    year: number
+}
+
+export interface SourceUser {
     login: string
     name: string | null
     avatar_url: string
@@ -7,9 +15,11 @@ export interface GiteeUser {
     followers_count: number
     following_count: number
     created_at: string
+    platform: Platform
+    platformLabel: string
 }
 
-export interface GiteeRepo {
+export interface SourceRepo {
     name: string
     language: string | null
     stargazers_count: number
@@ -19,7 +29,8 @@ export interface GiteeRepo {
     fork: boolean
 }
 
-export interface UserData extends GiteeUser {
+export interface UserData extends SourceUser {
+    year: number
     totalStars: number
     topLang: string
     rank: string

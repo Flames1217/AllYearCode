@@ -16,7 +16,7 @@ const showDonation = ref(false)
             <header class="flex items-center justify-between border-b border-slate-800 pb-8">
                 <div>
                     <h1 class="text-4xl font-black bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">About</h1>
-                    <p class="mt-2 text-slate-400">Gitee Trace Soul</p>
+                    <p class="mt-2 text-slate-400">CodeYear Pulse</p>
                 </div>
                 <button @click="$emit('back')" class="px-4 py-2 rounded-full border border-slate-700 hover:bg-slate-800 transition-colors flex items-center gap-2 text-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,7 +31,7 @@ const showDonation = ref(false)
                 <div class="glass p-8 rounded-3xl border border-slate-800 bg-slate-900/50">
                     <h2 class="text-2xl font-bold mb-4 flex items-center gap-3"><span class="text-teal-400">🚀</span> 项目初衷</h2>
                     <p class="leading-relaxed text-slate-300">
-                        Gitee 2025 Year in Code 是一个专注于开发者行为建模的年度回顾工具。不同于传统的数据罗列，我们通过 AI
+                        GitHub / Gitee Year in Code 是一个专注于开发者行为建模的年度回顾工具。不同于传统的数据罗列，我们通过 AI
                         深度扫描你的公开仓库<strong>资产配置、技术栈演进及开源影响力</strong>，解码出隐藏在项目列表背后的“开发者数字人格”。
                         它不仅是一份数据报告，更是一张融合了技术深度与社交属性的“赛博灵魂名片”。
                     </p>
@@ -45,45 +45,45 @@ const showDonation = ref(false)
                             <li class="flex items-start gap-3">
                                 <div class="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5"></div>
                                 <div>
-                                    <strong class="text-slate-100">主模型: Xiaomi Mimo-v2-flash</strong>
-                                    <p class="text-slate-400 mt-1">提供极速且精准的语义分析，擅长捕捉技术栈的细微变化。</p>
+                                    <strong class="text-slate-100">本地 AI 配置</strong>
+                                    <p class="text-slate-400 mt-1">在首页填写 OpenAI-compatible endpoint、模型和 API Key 后即可生成 AI 分析。</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5"></div>
                                 <div>
-                                    <strong class="text-slate-100">备用模型: Zhipu GLM-4v-flash</strong>
-                                    <p class="text-slate-400 mt-1">作为高可靠性的备份方案，确保在高并发期间服务依然稳定。</p>
+                                    <strong class="text-slate-100">密钥仅存浏览器</strong>
+                                    <p class="text-slate-400 mt-1">AI 敏感信息只写入当前浏览器 localStorage，不随项目代码和部署服务分发。</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="w-1.5 h-1.5 rounded-full bg-teal-500 mt-1.5"></div>
                                 <div>
-                                    <strong class="text-slate-100">AI 调度网关 (Edge Proxy)</strong>
-                                    <p class="text-slate-400 mt-1">基于 Cloudflare Workers 部署的边缘调度层，实时监控模型可用性并进行智能流量分发与 Fallback。</p>
+                                    <strong class="text-slate-100">无默认共享代理</strong>
+                                    <p class="text-slate-400 mt-1">未配置 AI 时只显示降级文案，避免其他用户部署后消耗作者或部署者的额度。</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- How to get Gitee ID Section -->
+                    <!-- How to get user ID Section -->
                     <div class="glass p-8 rounded-3xl border border-slate-800 bg-slate-900/50">
-                        <h2 class="text-2xl font-bold mb-4 flex items-center gap-3"><span class="text-amber-400">🔍</span> 如何获取 Gitee ID？</h2>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center gap-3"><span class="text-amber-400">🔍</span> 如何获取用户 ID？</h2>
                         <div class="space-y-4">
-                            <p class="text-sm text-slate-300">在首页搜索框中，您需要输入的是您的 Gitee 用户名（ID），而不是完整的个人主页链接。</p>
+                            <p class="text-sm text-slate-300">在首页选择 GitHub 或 Gitee 后，输入对应平台的用户名（ID）即可，也支持直接粘贴个人主页链接。</p>
                             <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800">
-                                <p class="text-xs text-slate-500 mb-2 font-mono">例如您的个人主页是：</p>
+                                <p class="text-xs text-slate-500 mb-2 font-mono">例如个人主页是：</p>
                                 <div class="text-sm font-mono break-all">
-                                    <span class="text-slate-400">https://gitee.com/</span
-                                    ><span class="text-amber-400 font-bold underline decoration-amber-500/50 underline-offset-4">liuziting</span
+                                    <span class="text-slate-400">https://github.com/</span
+                                    ><span class="text-amber-400 font-bold underline decoration-amber-500/50 underline-offset-4">Flames1217</span
                                     ><span class="text-slate-400">/</span>
                                 </div>
                                 <div class="mt-4 flex items-center gap-2 text-[10px] text-amber-500/80 font-bold tracking-wider">
                                     <span class="flex h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse"></span>
-                                    输入内容即为：liuziting
+                                    输入内容即为：Flames1217
                                 </div>
                             </div>
-                            <p class="text-[10px] text-slate-500 italic leading-relaxed">* 提示：用户名通常显示在 Gitee 个人主页头像下方，或出现在主页 URL 的末尾。</p>
+                            <p class="text-[10px] text-slate-500 italic leading-relaxed">* 提示：用户名通常显示在个人主页头像下方，或出现在主页 URL 的末尾。</p>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ const showDonation = ref(false)
                 <!-- Request Mechanism Section (Full Width) -->
                 <div class="glass p-8 rounded-3xl border border-slate-800 bg-slate-900/50">
                     <h2 class="text-2xl font-bold mb-4 flex items-center gap-3"><span class="text-blue-400">🛡️</span> 请求与频率限制</h2>
-                    <p class="text-sm leading-relaxed text-slate-300 mb-4">为保护隐私，所有 Gitee 公开数据的抓取均在您的浏览器端直接完成。</p>
+                    <p class="text-sm leading-relaxed text-slate-300 mb-4">为保护隐私，所有 GitHub / Gitee 公开数据的抓取均在您的浏览器端直接完成。</p>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-slate-950/30 p-4 rounded-xl border border-slate-800/50">
                             <h3 class="text-sm font-bold text-slate-100 mb-2 flex items-center gap-2">
@@ -99,7 +99,7 @@ const showDonation = ref(false)
                                 速率限制 (Rate Limit)
                             </h3>
                             <p class="text-xs leading-relaxed text-slate-400">
-                                由于 Gitee 对匿名 API 请求有严格的速率限制（通常为 <code class="text-amber-400/80">60次/小时/IP</code>），若短时间内查询频繁，可能会触发 403 错误。
+                                GitHub 与 Gitee 对匿名 API 请求都有速率限制，若短时间内查询频繁，可能会触发 403 错误。
                             </p>
                         </div>
                         <div class="bg-slate-950/30 p-4 rounded-xl border border-slate-800/50">
@@ -108,7 +108,7 @@ const showDonation = ref(false)
                                 解决方案
                             </h3>
                             <p class="text-xs leading-relaxed text-slate-400">
-                                如果您遇到速率限制错误，建议切换 VPN 节点（更改出口 IP）或等待一段时间后再试。本工具绝不存储您的任何个人 Token。
+                                如果遇到速率限制错误，建议等待一段时间后再试。本工具不要求输入 GitHub / Gitee Token，也不会存储平台 Token。
                             </p>
                         </div>
                     </div>
@@ -138,7 +138,7 @@ const showDonation = ref(false)
 
                         <!-- Gitee Follow -->
                         <a
-                            href="https://gitee.com/liu-ziting"
+                            href="https://github.com/Flames1217"
                             target="_blank"
                             class="flex-1 w-full md:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-slate-800/40 hover:bg-slate-700/60 transition-all border border-slate-700 hover:border-teal-500/30 group"
                         >
@@ -200,7 +200,7 @@ const showDonation = ref(false)
             </Teleport>
 
             <footer class="text-center pt-12 border-t border-slate-800 text-slate-500 text-xs space-y-2">
-                <p>© 2025 Gitee Trace Soul. Built with ❤️ for Developers.</p>
+                <p>© CodeYear Pulse. Built with ❤️ for Developers.</p>
                 <p class="opacity-50 font-mono tracking-wider italic">
                     Crafted with <span class="text-teal-400/80">Gemini-3-Flash</span> via <span class="text-purple-400/80">VibeCoding</span>
                 </p>

@@ -64,7 +64,7 @@
                 </div>
                 <div class="hidden md:block opacity-20 text-right">
                     <p class="text-xs font-mono">TRACE REPORT</p>
-                    <p class="text-xs font-mono">2025 VERIFIED</p>
+                    <p class="text-xs font-mono">{{ userData.year || 'YEAR' }} VERIFIED</p>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@
             <div class="space-y-6">
                 <!-- 热力图卡片 -->
                 <div class="glass p-6 bg-slate-900/30" v-if="false">
-                    <p class="text-xs text-gray-400 font-bold mb-4 uppercase tracking-wider">{{ userData.totalContributions || 737 }} contributions in 2025</p>
+                    <p class="text-xs text-gray-400 font-bold mb-4 uppercase tracking-wider">{{ userData.totalContributions || 737 }} contributions in {{ userData.year || 'Year' }}</p>
                     <div class="chart-scroll relative min-h-[100px]">
                         <!-- 加载中占位 -->
                         <div v-if="!chartLoaded && !chartError" class="absolute inset-0 bg-white/5 animate-pulse rounded-xl flex items-center justify-center">
@@ -122,11 +122,11 @@
                         <div class="text-2xl font-black text-blue-400">{{ userData.topLang || 'Vue' }}</div>
                     </div>
 
-                    <!-- Gitee Seniority -->
+                    <!-- Platform Seniority -->
                     <div class="glass p-4 bg-gradient-to-br from-orange-900/20 to-transparent">
                         <div class="flex items-center gap-2 mb-2">
                             <span class="text-orange-400">⏳</span>
-                            <p class="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Gitee Seniority</p>
+                            <p class="text-[10px] text-gray-400 font-bold uppercase tracking-wider">{{ userData.platformLabel || 'Code' }} Seniority</p>
                         </div>
                         <div class="text-2xl font-black text-orange-400">{{ userData.techImpact || '0 days' }}</div>
                     </div>
@@ -177,13 +177,13 @@
                     </div>
                 </div>
 
-                <!-- 2025 Gitee 之最 -->
+                <!-- 年度平台之最 -->
                 <div v-if="false" class="glass p-4 md:p-6 bg-slate-900/30 border border-white/5">
                     <div class="flex items-center gap-3 mb-6">
                         <span class="text-xl md:text-2xl">🏆</span>
                         <div>
-                            <h3 class="text-lg md:text-xl font-black text-white uppercase tracking-wider">2025 GITEE BESTS</h3>
-                            <p class="text-[9px] md:text-[10px] text-gray-500 font-bold uppercase tracking-[0.2em]">你的 2025 编程高光时刻</p>
+                            <h3 class="text-lg md:text-xl font-black text-white uppercase tracking-wider">{{ userData.year || 'YEAR' }} {{ userData.platformLabel || 'CODE' }} BESTS</h3>
+                            <p class="text-[9px] md:text-[10px] text-gray-500 font-bold uppercase tracking-[0.2em]">你的 {{ userData.year || '年度' }} 编程高光时刻</p>
                         </div>
                     </div>
 
@@ -385,21 +385,21 @@
             <!-- Footer -->
             <div class="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center opacity-50 gap-4">
                 <div class="flex flex-col items-center md:items-start gap-1">
-                    <p class="text-[8px] font-mono tracking-widest uppercase text-center md:text-left">Power by Xiaomi Mimo-v2 & Gitee Trace Engine</p>
+                    <p class="text-[8px] font-mono tracking-widest uppercase text-center md:text-left">Power by Local AI Settings & {{ userData.platformLabel || 'Code' }} Trace Engine</p>
                     <div class="flex items-center gap-2">
                         <p class="text-[8px] font-mono tracking-widest uppercase">Build yours at:</p>
                         <a
-                            href="https://gitee2025.lz-t.top/"
+                            href="https://github.com/Flames1217"
                             target="_blank"
                             class="text-[10px] font-bold font-mono tracking-widest hover:text-white transition-colors border-b border-white/20"
-                            >https://gitee2025.lz-t.top</a
+                            >https://github.com/Flames1217</a
                         >
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="hidden md:block text-right">
                         <p class="text-[8px] font-mono tracking-widest uppercase">Verified Report</p>
-                        <p class="text-[8px] font-mono tracking-widest uppercase">2025 Edition</p>
+                        <p class="text-[8px] font-mono tracking-widest uppercase">{{ userData.year || 'Year' }} Edition</p>
                     </div>
                     <div class="w-5 h-5 bg-red-600 rounded flex items-center justify-center text-[10px] font-bold text-white">G</div>
                 </div>

@@ -1,10 +1,11 @@
 {
-  "name": "tmp_vite",
+  "name": "code-year-pulse",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "vitest run",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
@@ -24,6 +25,7 @@
     "tailwindcss": "^3.4.0",
     "typescript": "~5.9.3",
     "vite": "^7.2.4",
+    "vitest": "^3.2.6",
     "vue-tsc": "^3.1.4"
   }
 }
