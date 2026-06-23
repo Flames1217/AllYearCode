@@ -16,7 +16,7 @@ const showDonation = ref(false)
             <header class="flex items-center justify-between border-b border-slate-800 pb-8">
                 <div>
                     <h1 class="text-4xl font-black bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">About</h1>
-                    <p class="mt-2 text-slate-400">CodeYear Pulse</p>
+                    <p class="mt-2 text-slate-400">AllYearCode</p>
                 </div>
                 <button @click="$emit('back')" class="px-4 py-2 rounded-full border border-slate-700 hover:bg-slate-800 transition-colors flex items-center gap-2 text-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -200,7 +200,7 @@ const showDonation = ref(false)
             </Teleport>
 
             <footer class="text-center pt-12 border-t border-slate-800 text-slate-500 text-xs space-y-2">
-                <p>© CodeYear Pulse. Built with ❤️ for Developers.</p>
+                <p>© AllYearCode. Built with ❤️ for Developers.</p>
                 <p class="opacity-50 font-mono tracking-wider italic">
                     Crafted with <span class="text-teal-400/80">Gemini-3-Flash</span> via <span class="text-purple-400/80">VibeCoding</span>
                 </p>

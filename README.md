@@ -1,6 +1,6 @@
-# CodeYear Pulse
+# AllYearCode
 
-CodeYear Pulse 是一个 GitHub / Gitee 年度代码回顾工具。输入用户名，选择年份，即可生成开发者年度数据报告、技术栈图表、AI 总结与分享海报。
+AllYearCode 是一个 GitHub / Gitee 年度代码回顾工具。输入用户名，选择年份，即可生成开发者年度数据报告、技术栈图表、AI 总结与分享海报。
 
 ## 特性
 
